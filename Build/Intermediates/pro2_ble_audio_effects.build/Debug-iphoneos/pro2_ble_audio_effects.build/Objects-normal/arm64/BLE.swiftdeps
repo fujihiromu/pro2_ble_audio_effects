@@ -1,0 +1,766 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BLE"
+provides-nominal:
+- "22pro2_ble_audio_effects3BLEC"
+provides-member:
+- ["22pro2_ble_audio_effects3BLEC", ""]
+provides-dynamic-lookup:
+- "ID"
+- "centralManager"
+- "centralManagerDidUpdateState"
+- "peripheral"
+- "scanBtnTapped"
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "=="
+- !private ">"
+- "AssignmentPrecedence"
+- "BLE"
+- "BooleanLiteralType"
+- "CBCentralManager"
+- "CBCentralManagerDelegate"
+- "CBCharacteristic"
+- "CBPeripheral"
+- "CBPeripheralDelegate"
+- "CBService"
+- !private "CBUUID"
+- "CastingPrecedence"
+- "Error"
+- !private "NSData"
+- "NSNumber"
+- "NSObject"
+- !private "NSString"
+- "String"
+- !private "StringLiteralType"
+- "UIButton"
+- "UILabel"
+- !private "UnicodeScalarType"
+- !private "print"
+depends-member:
+- !private ["Sa", "count"]
+- ["22pro2_ble_audio_effects3BLEC", "BLEstart"]
+- ["22pro2_ble_audio_effects3BLEC", "CBCentralManager"]
+- ["22pro2_ble_audio_effects3BLEC", "CBCharacteristic"]
+- ["22pro2_ble_audio_effects3BLEC", "CBPeripheral"]
+- ["22pro2_ble_audio_effects3BLEC", "CBService"]
+- !private ["22pro2_ble_audio_effects3BLEC", "CBUUID"]
+- ["22pro2_ble_audio_effects3BLEC", "Error"]
+- ["22pro2_ble_audio_effects3BLEC", "ID"]
+- !private ["22pro2_ble_audio_effects3BLEC", "NSData"]
+- ["22pro2_ble_audio_effects3BLEC", "NSNumber"]
+- !private ["22pro2_ble_audio_effects3BLEC", "NSString"]
+- ["22pro2_ble_audio_effects3BLEC", "String"]
+- ["22pro2_ble_audio_effects3BLEC", "UIButton"]
+- ["22pro2_ble_audio_effects3BLEC", "UILabel"]
+- ["22pro2_ble_audio_effects3BLEC", "centralManager"]
+- ["22pro2_ble_audio_effects3BLEC", "centralManagerDidUpdateState"]
+- ["22pro2_ble_audio_effects3BLEC", "deinit"]
+- ["22pro2_ble_audio_effects3BLEC", "init"]
+- !private ["22pro2_ble_audio_effects3BLEC", "isScanning"]
+- ["22pro2_ble_audio_effects3BLEC", "peripheral"]
+- ["22pro2_ble_audio_effects3BLEC", "peripheralDidUpdateName"]
+- ["22pro2_ble_audio_effects3BLEC", "peripheralDidUpdateRSSI"]
+- ["22pro2_ble_audio_effects3BLEC", "peripheralIsReady"]
+- ["22pro2_ble_audio_effects3BLEC", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["22pro2_ble_audio_effects3BLEC", "print"]
+- ["22pro2_ble_audio_effects3BLEC", "scanBtnTapped"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "range"]
+- !private ["s23BidirectionalCollectionP", "removeSubrange"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "setTitle"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So11CBAttributeC", "characteristics"]
+- !private ["So11CBAttributeC", "description"]
+- !private ["So11CBAttributeC", "isNotifying"]
+- !private ["So11CBAttributeC", "uuid"]
+- !private ["So11CBAttributeC", "value"]
+- !private ["So16CBCentralManagerC", "connect"]
+- !private ["So16CBCentralManagerC", "init"]
+- !private ["So16CBCentralManagerC", "scanForPeripherals"]
+- !private ["So16CBCentralManagerC", "state"]
+- !private ["So16CBCentralManagerC", "stopScan"]
+- !private ["So24CBCentralManagerDelegateP", "CBCentralManager"]
+- !private ["So24CBCentralManagerDelegateP", "CBUUID"]
+- !private ["So24CBCentralManagerDelegateP", "ID"]
+- !private ["So24CBCentralManagerDelegateP", "NSData"]
+- !private ["So24CBCentralManagerDelegateP", "String"]
+- ["So24CBCentralManagerDelegateP", "centralManager"]
+- ["So24CBCentralManagerDelegateP", "centralManagerDidUpdateState"]
+- !private ["So24CBCentralManagerDelegateP", "isScanning"]
+- ["So24CBCentralManagerDelegateP", "peripheral"]
+- ["So24CBCentralManagerDelegateP", "peripheralDidUpdateName"]
+- ["So24CBCentralManagerDelegateP", "peripheralDidUpdateRSSI"]
+- ["So24CBCentralManagerDelegateP", "peripheralIsReady"]
+- ["So24CBCentralManagerDelegateP", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["So24CBCentralManagerDelegateP", "print"]
+- ["So24CBCentralManagerDelegateP", ""]
+- !private ["So16CBCharacteristicC", "description"]
+- !private ["So16CBCharacteristicC", "isNotifying"]
+- !private ["So16CBCharacteristicC", "uuid"]
+- !private ["So16CBCharacteristicC", "value"]
+- !private ["So9CBManagerC", "connect"]
+- !private ["So9CBManagerC", "init"]
+- !private ["So9CBManagerC", "scanForPeripherals"]
+- !private ["So9CBManagerC", "state"]
+- !private ["So9CBManagerC", "stopScan"]
+- !private ["So6CBPeerC", "delegate"]
+- !private ["So6CBPeerC", "discoverCharacteristics"]
+- !private ["So6CBPeerC", "discoverServices"]
+- !private ["So6CBPeerC", "name"]
+- !private ["So6CBPeerC", "services"]
+- !private ["So6CBPeerC", "setNotifyValue"]
+- !private ["So12CBPeripheralC", "delegate"]
+- !private ["So12CBPeripheralC", "discoverCharacteristics"]
+- !private ["So12CBPeripheralC", "discoverServices"]
+- !private ["So12CBPeripheralC", "name"]
+- !private ["So12CBPeripheralC", "services"]
+- !private ["So12CBPeripheralC", "setNotifyValue"]
+- !private ["So20CBPeripheralDelegateP", "CBCentralManager"]
+- !private ["So20CBPeripheralDelegateP", "CBUUID"]
+- !private ["So20CBPeripheralDelegateP", "ID"]
+- !private ["So20CBPeripheralDelegateP", "NSData"]
+- !private ["So20CBPeripheralDelegateP", "String"]
+- ["So20CBPeripheralDelegateP", "centralManager"]
+- ["So20CBPeripheralDelegateP", "centralManagerDidUpdateState"]
+- !private ["So20CBPeripheralDelegateP", "isScanning"]
+- ["So20CBPeripheralDelegateP", "peripheral"]
+- ["So20CBPeripheralDelegateP", "peripheralDidUpdateName"]
+- ["So20CBPeripheralDelegateP", "peripheralDidUpdateRSSI"]
+- ["So20CBPeripheralDelegateP", "peripheralIsReady"]
+- ["So20CBPeripheralDelegateP", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["So20CBPeripheralDelegateP", "print"]
+- ["So20CBPeripheralDelegateP", ""]
+- !private ["So9CBServiceC", "characteristics"]
+- !private ["So6CBUUIDC", "init"]
+- !private ["So6CBUUIDC", "isEqual"]
+- !private ["s7CVarArgP", "CBCentralManager"]
+- !private ["s7CVarArgP", "CBUUID"]
+- !private ["s7CVarArgP", "ID"]
+- !private ["s7CVarArgP", "NSData"]
+- !private ["s7CVarArgP", "String"]
+- ["s7CVarArgP", "centralManager"]
+- ["s7CVarArgP", "centralManagerDidUpdateState"]
+- !private ["s7CVarArgP", "characteristics"]
+- !private ["s7CVarArgP", "connect"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "description"]
+- !private ["s7CVarArgP", "discoverCharacteristics"]
+- !private ["s7CVarArgP", "discoverServices"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEqual"]
+- !private ["s7CVarArgP", "isNotifying"]
+- !private ["s7CVarArgP", "isScanning"]
+- !private ["s7CVarArgP", "name"]
+- ["s7CVarArgP", "peripheral"]
+- ["s7CVarArgP", "peripheralDidUpdateName"]
+- ["s7CVarArgP", "peripheralDidUpdateRSSI"]
+- ["s7CVarArgP", "peripheralIsReady"]
+- ["s7CVarArgP", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "range"]
+- !private ["s7CVarArgP", "removeSubrange"]
+- !private ["s7CVarArgP", "scanForPeripherals"]
+- !private ["s7CVarArgP", "services"]
+- !private ["s7CVarArgP", "setNotifyValue"]
+- !private ["s7CVarArgP", "setTitle"]
+- !private ["s7CVarArgP", "state"]
+- !private ["s7CVarArgP", "stopScan"]
+- !private ["s7CVarArgP", "substring"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "uuid"]
+- !private ["s7CVarArgP", "value"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "range"]
+- !private ["s10CollectionP", "removeSubrange"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "range"]
+- !private ["s10ComparableP", "removeSubrange"]
+- !private ["s28CustomDebugStringConvertibleP", "CBCentralManager"]
+- !private ["s28CustomDebugStringConvertibleP", "CBUUID"]
+- !private ["s28CustomDebugStringConvertibleP", "ID"]
+- !private ["s28CustomDebugStringConvertibleP", "NSData"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- ["s28CustomDebugStringConvertibleP", "centralManager"]
+- ["s28CustomDebugStringConvertibleP", "centralManagerDidUpdateState"]
+- !private ["s28CustomDebugStringConvertibleP", "characteristics"]
+- !private ["s28CustomDebugStringConvertibleP", "connect"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "description"]
+- !private ["s28CustomDebugStringConvertibleP", "discoverCharacteristics"]
+- !private ["s28CustomDebugStringConvertibleP", "discoverServices"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEqual"]
+- !private ["s28CustomDebugStringConvertibleP", "isNotifying"]
+- !private ["s28CustomDebugStringConvertibleP", "isScanning"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- ["s28CustomDebugStringConvertibleP", "peripheral"]
+- ["s28CustomDebugStringConvertibleP", "peripheralDidUpdateName"]
+- ["s28CustomDebugStringConvertibleP", "peripheralDidUpdateRSSI"]
+- ["s28CustomDebugStringConvertibleP", "peripheralIsReady"]
+- ["s28CustomDebugStringConvertibleP", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "range"]
+- !private ["s28CustomDebugStringConvertibleP", "removeSubrange"]
+- !private ["s28CustomDebugStringConvertibleP", "scanForPeripherals"]
+- !private ["s28CustomDebugStringConvertibleP", "services"]
+- !private ["s28CustomDebugStringConvertibleP", "setNotifyValue"]
+- !private ["s28CustomDebugStringConvertibleP", "setTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "state"]
+- !private ["s28CustomDebugStringConvertibleP", "stopScan"]
+- !private ["s28CustomDebugStringConvertibleP", "substring"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "uuid"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "range"]
+- !private ["s29CustomPlaygroundQuickLookableP", "removeSubrange"]
+- !private ["s29CustomPlaygroundQuickLookableP", "substring"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "range"]
+- !private ["s17CustomReflectableP", "removeSubrange"]
+- !private ["s23CustomStringConvertibleP", "CBCentralManager"]
+- !private ["s23CustomStringConvertibleP", "CBUUID"]
+- !private ["s23CustomStringConvertibleP", "ID"]
+- !private ["s23CustomStringConvertibleP", "NSData"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "centralManager"]
+- ["s23CustomStringConvertibleP", "centralManagerDidUpdateState"]
+- !private ["s23CustomStringConvertibleP", "characteristics"]
+- !private ["s23CustomStringConvertibleP", "connect"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "discoverCharacteristics"]
+- !private ["s23CustomStringConvertibleP", "discoverServices"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEqual"]
+- !private ["s23CustomStringConvertibleP", "isNotifying"]
+- !private ["s23CustomStringConvertibleP", "isScanning"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- ["s23CustomStringConvertibleP", "peripheral"]
+- ["s23CustomStringConvertibleP", "peripheralDidUpdateName"]
+- ["s23CustomStringConvertibleP", "peripheralDidUpdateRSSI"]
+- ["s23CustomStringConvertibleP", "peripheralIsReady"]
+- ["s23CustomStringConvertibleP", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "range"]
+- !private ["s23CustomStringConvertibleP", "removeSubrange"]
+- !private ["s23CustomStringConvertibleP", "scanForPeripherals"]
+- !private ["s23CustomStringConvertibleP", "services"]
+- !private ["s23CustomStringConvertibleP", "setNotifyValue"]
+- !private ["s23CustomStringConvertibleP", "setTitle"]
+- !private ["s23CustomStringConvertibleP", "state"]
+- !private ["s23CustomStringConvertibleP", "stopScan"]
+- !private ["s23CustomStringConvertibleP", "substring"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "uuid"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "range"]
+- !private ["s9DecodableP", "removeSubrange"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "range"]
+- !private ["s9EncodableP", "removeSubrange"]
+- !private ["s9EquatableP", "CBCentralManager"]
+- !private ["s9EquatableP", "CBUUID"]
+- !private ["s9EquatableP", "ID"]
+- !private ["s9EquatableP", "NSData"]
+- !private ["s9EquatableP", "String"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "centralManager"]
+- ["s9EquatableP", "centralManagerDidUpdateState"]
+- !private ["s9EquatableP", "characteristics"]
+- !private ["s9EquatableP", "connect"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "description"]
+- !private ["s9EquatableP", "discoverCharacteristics"]
+- !private ["s9EquatableP", "discoverServices"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEqual"]
+- !private ["s9EquatableP", "isNotifying"]
+- !private ["s9EquatableP", "isScanning"]
+- !private ["s9EquatableP", "name"]
+- !private ["s9EquatableP", "normal"]
+- ["s9EquatableP", "peripheral"]
+- ["s9EquatableP", "peripheralDidUpdateName"]
+- ["s9EquatableP", "peripheralDidUpdateRSSI"]
+- ["s9EquatableP", "peripheralIsReady"]
+- ["s9EquatableP", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "range"]
+- !private ["s9EquatableP", "removeSubrange"]
+- !private ["s9EquatableP", "scanForPeripherals"]
+- !private ["s9EquatableP", "services"]
+- !private ["s9EquatableP", "setNotifyValue"]
+- !private ["s9EquatableP", "setTitle"]
+- !private ["s9EquatableP", "state"]
+- !private ["s9EquatableP", "stopScan"]
+- !private ["s9EquatableP", "substring"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "uuid"]
+- !private ["s9EquatableP", "value"]
+- ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "normal"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "range"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "removeSubrange"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "substring"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "range"]
+- !private ["s26ExpressibleByStringLiteralP", "removeSubrange"]
+- !private ["s26ExpressibleByStringLiteralP", "substring"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "range"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "removeSubrange"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "substring"]
+- !private ["s8HashableP", "CBCentralManager"]
+- !private ["s8HashableP", "CBUUID"]
+- !private ["s8HashableP", "ID"]
+- !private ["s8HashableP", "NSData"]
+- !private ["s8HashableP", "String"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "centralManager"]
+- ["s8HashableP", "centralManagerDidUpdateState"]
+- !private ["s8HashableP", "characteristics"]
+- !private ["s8HashableP", "connect"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "description"]
+- !private ["s8HashableP", "discoverCharacteristics"]
+- !private ["s8HashableP", "discoverServices"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isEqual"]
+- !private ["s8HashableP", "isNotifying"]
+- !private ["s8HashableP", "isScanning"]
+- !private ["s8HashableP", "name"]
+- ["s8HashableP", "peripheral"]
+- ["s8HashableP", "peripheralDidUpdateName"]
+- ["s8HashableP", "peripheralDidUpdateRSSI"]
+- ["s8HashableP", "peripheralIsReady"]
+- ["s8HashableP", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "range"]
+- !private ["s8HashableP", "removeSubrange"]
+- !private ["s8HashableP", "scanForPeripherals"]
+- !private ["s8HashableP", "services"]
+- !private ["s8HashableP", "setNotifyValue"]
+- !private ["s8HashableP", "setTitle"]
+- !private ["s8HashableP", "state"]
+- !private ["s8HashableP", "stopScan"]
+- !private ["s8HashableP", "substring"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "uuid"]
+- !private ["s8HashableP", "value"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "range"]
+- !private ["s25LosslessStringConvertibleP", "removeSubrange"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "range"]
+- !private ["s10MirrorPathP", "removeSubrange"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "range"]
+- !private ["So8NSCodingP", "removeSubrange"]
+- !private ["So8NSCodingP", "setTitle"]
+- !private ["So8NSCodingP", "substring"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So9NSCopyingP", "delegate"]
+- !private ["So9NSCopyingP", "discoverCharacteristics"]
+- !private ["So9NSCopyingP", "discoverServices"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isEqual"]
+- !private ["So9NSCopyingP", "name"]
+- !private ["So9NSCopyingP", "range"]
+- !private ["So9NSCopyingP", "removeSubrange"]
+- !private ["So9NSCopyingP", "services"]
+- !private ["So9NSCopyingP", "setNotifyValue"]
+- !private ["So9NSCopyingP", "substring"]
+- !private ["So6NSDataC", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "range"]
+- !private ["So21NSItemProviderReadingP", "removeSubrange"]
+- !private ["So21NSItemProviderReadingP", "substring"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "range"]
+- !private ["So21NSItemProviderWritingP", "removeSubrange"]
+- !private ["So21NSItemProviderWritingP", "substring"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "range"]
+- !private ["So16NSMutableCopyingP", "removeSubrange"]
+- !private ["So16NSMutableCopyingP", "substring"]
+- ["So8NSObjectC", "BLEstart"]
+- ["So8NSObjectC", "CBCentralManager"]
+- ["So8NSObjectC", "CBCharacteristic"]
+- ["So8NSObjectC", "CBPeripheral"]
+- ["So8NSObjectC", "CBService"]
+- !private ["So8NSObjectC", "CBUUID"]
+- ["So8NSObjectC", "Error"]
+- ["So8NSObjectC", "ID"]
+- !private ["So8NSObjectC", "NSData"]
+- ["So8NSObjectC", "NSNumber"]
+- !private ["So8NSObjectC", "NSString"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "centralManager"]
+- ["So8NSObjectC", "centralManagerDidUpdateState"]
+- !private ["So8NSObjectC", "characteristics"]
+- !private ["So8NSObjectC", "connect"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "description"]
+- !private ["So8NSObjectC", "discoverCharacteristics"]
+- !private ["So8NSObjectC", "discoverServices"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEqual"]
+- !private ["So8NSObjectC", "isNotifying"]
+- ["So8NSObjectC", "isScanning"]
+- !private ["So8NSObjectC", "name"]
+- ["So8NSObjectC", "peripheral"]
+- ["So8NSObjectC", "peripheralDidUpdateName"]
+- ["So8NSObjectC", "peripheralDidUpdateRSSI"]
+- ["So8NSObjectC", "peripheralIsReady"]
+- ["So8NSObjectC", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "range"]
+- !private ["So8NSObjectC", "removeSubrange"]
+- ["So8NSObjectC", "scanBtnTapped"]
+- !private ["So8NSObjectC", "scanForPeripherals"]
+- !private ["So8NSObjectC", "services"]
+- !private ["So8NSObjectC", "setNotifyValue"]
+- !private ["So8NSObjectC", "setTitle"]
+- !private ["So8NSObjectC", "state"]
+- !private ["So8NSObjectC", "stopScan"]
+- !private ["So8NSObjectC", "substring"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "uuid"]
+- !private ["So8NSObjectC", "value"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "CBCentralManager"]
+- !private ["So16NSObjectProtocolP", "CBUUID"]
+- !private ["So16NSObjectProtocolP", "ID"]
+- !private ["So16NSObjectProtocolP", "NSData"]
+- !private ["So16NSObjectProtocolP", "String"]
+- ["So16NSObjectProtocolP", "centralManager"]
+- ["So16NSObjectProtocolP", "centralManagerDidUpdateState"]
+- !private ["So16NSObjectProtocolP", "characteristics"]
+- !private ["So16NSObjectProtocolP", "connect"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "description"]
+- !private ["So16NSObjectProtocolP", "discoverCharacteristics"]
+- !private ["So16NSObjectProtocolP", "discoverServices"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isEqual"]
+- !private ["So16NSObjectProtocolP", "isNotifying"]
+- !private ["So16NSObjectProtocolP", "isScanning"]
+- !private ["So16NSObjectProtocolP", "name"]
+- ["So16NSObjectProtocolP", "peripheral"]
+- ["So16NSObjectProtocolP", "peripheralDidUpdateName"]
+- ["So16NSObjectProtocolP", "peripheralDidUpdateRSSI"]
+- ["So16NSObjectProtocolP", "peripheralIsReady"]
+- ["So16NSObjectProtocolP", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "range"]
+- !private ["So16NSObjectProtocolP", "removeSubrange"]
+- !private ["So16NSObjectProtocolP", "scanForPeripherals"]
+- !private ["So16NSObjectProtocolP", "services"]
+- !private ["So16NSObjectProtocolP", "setNotifyValue"]
+- !private ["So16NSObjectProtocolP", "setTitle"]
+- !private ["So16NSObjectProtocolP", "state"]
+- !private ["So16NSObjectProtocolP", "stopScan"]
+- !private ["So16NSObjectProtocolP", "substring"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "uuid"]
+- !private ["So16NSObjectProtocolP", "value"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "range"]
+- !private ["So14NSSecureCodingP", "removeSubrange"]
+- !private ["So14NSSecureCodingP", "substring"]
+- !private ["So8NSStringC", "init"]
+- !private ["So8NSStringC", "range"]
+- !private ["So8NSStringC", "removeSubrange"]
+- !private ["So8NSStringC", "substring"]
+- !private ["s9OptionSetP", "normal"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "range"]
+- !private ["s26RangeReplaceableCollectionP", "removeSubrange"]
+- !private ["s16RawRepresentableP", "normal"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "range"]
+- !private ["s8SequenceP", "removeSubrange"]
+- !private ["s10SetAlgebraP", "normal"]
+- !private ["SS", "init"]
+- !private ["SS", "range"]
+- !private ["SS", "removeSubrange"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s14StringProtocolP", "range"]
+- !private ["s14StringProtocolP", "removeSubrange"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "range"]
+- !private ["s16TextOutputStreamP", "removeSubrange"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "range"]
+- !private ["s20TextOutputStreamableP", "removeSubrange"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setTitle"]
+- !private ["So29UIAccessibilityIdentificationP", "setTitle"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "setTitle"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "setTitle"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So8UIButtonC", "setTitle"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "setTitle"]
+- !private ["SC14UIControlStateV", "normal"]
+- !private ["So17UICoordinateSpaceP", "setTitle"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "setTitle"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "setTitle"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So11UIFocusItemP", "setTitle"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "setTitle"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So11UIResponderC", "setTitle"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "setTitle"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "setTitle"]
+- !private ["So18UITraitEnvironmentP", "setTitle"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So6UIViewC", "setTitle"]
+- !private ["So6UIViewC", "text"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "range"]
+- !private ["s23_BidirectionalIndexableP", "removeSubrange"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setTitle"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "range"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "removeSubrange"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "range"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "removeSubrange"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "range"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "removeSubrange"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "range"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "removeSubrange"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "range"]
+- !private ["s33_ExpressibleByStringInterpolationP", "removeSubrange"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "range"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeSubrange"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "substring"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "range"]
+- !private ["s10_IndexableP", "removeSubrange"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "range"]
+- !private ["s14_IndexableBaseP", "removeSubrange"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CBCentralManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CBUUID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "centralManager"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "centralManagerDidUpdateState"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "characteristics"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "connect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "description"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "discoverCharacteristics"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "discoverServices"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEqual"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isNotifying"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isScanning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheral"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheralDidUpdateName"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheralDidUpdateRSSI"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheralIsReady"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheralIsReadyToSendWriteWithoutResponse"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "range"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeSubrange"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanForPeripherals"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "services"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setNotifyValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setTitle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "state"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stopScan"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "substring"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uuid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "range"]
+- !private ["s21_ObjectiveCBridgeableP", "removeSubrange"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "range"]
+- !private ["s26_RangeReplaceableIndexableP", "removeSubrange"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "range"]
+- !private ["s16_SwiftStringViewP", "removeSubrange"]
+depends-nominal:
+- !private "Sa"
+- "22pro2_ble_audio_effects3BLEC"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "So11CBAttributeC"
+- !private "So16CBCentralManagerC"
+- "So24CBCentralManagerDelegateP"
+- !private "So16CBCharacteristicC"
+- !private "So9CBManagerC"
+- !private "So6CBPeerC"
+- !private "So12CBPeripheralC"
+- "So20CBPeripheralDelegateP"
+- !private "So9CBServiceC"
+- !private "So6CBUUIDC"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So6NSDataC"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s9OptionSetP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "s10SetAlgebraP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "SC14UIControlStateV"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So7UILabelC"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "38b26bcdf0ad15470d059242cef34fc8"

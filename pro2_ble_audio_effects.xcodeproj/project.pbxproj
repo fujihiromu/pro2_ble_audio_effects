@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E5F4C251FA71A1A00058B9B /* music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F4C241FA71A1A00058B9B /* music2.mp3 */; };
 		5E6FC1CB1FA445B3004B15FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FC1CA1FA445B3004B15FE /* AppDelegate.swift */; };
 		5E6FC1CD1FA445B3004B15FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FC1CC1FA445B3004B15FE /* ViewController.swift */; };
 		5E6FC1D01FA445B3004B15FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6FC1CE1FA445B3004B15FE /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		5E6FC1D81FA445B3004B15FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6FC1D61FA445B3004B15FE /* LaunchScreen.storyboard */; };
 		5E6FC1E31FA445B4004B15FE /* pro2_ble_audio_effectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FC1E21FA445B4004B15FE /* pro2_ble_audio_effectsTests.swift */; };
 		5E6FC1EE1FA445B4004B15FE /* pro2_ble_audio_effectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FC1ED1FA445B4004B15FE /* pro2_ble_audio_effectsUITests.swift */; };
+		5E6FC2001FA4627C004B15FE /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E6FC1FF1FA4627C004B15FE /* music.mp3 */; };
+		5E6FC2021FA46703004B15FE /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FC2011FA46703004B15FE /* Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E5F4C241FA71A1A00058B9B /* music2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music2.mp3; sourceTree = "<group>"; };
 		5E6FC1C71FA445B3004B15FE /* pro2_ble_audio_effects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pro2_ble_audio_effects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6FC1CA1FA445B3004B15FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E6FC1CC1FA445B3004B15FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		5E6FC1E91FA445B4004B15FE /* pro2_ble_audio_effectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pro2_ble_audio_effectsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6FC1ED1FA445B4004B15FE /* pro2_ble_audio_effectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pro2_ble_audio_effectsUITests.swift; sourceTree = "<group>"; };
 		5E6FC1EF1FA445B4004B15FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E6FC1FF1FA4627C004B15FE /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		5E6FC2011FA46703004B15FE /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		5E6FC1C91FA445B3004B15FE /* pro2_ble_audio_effects */ = {
 			isa = PBXGroup;
 			children = (
+				5E5F4C241FA71A1A00058B9B /* music2.mp3 */,
+				5E6FC2011FA46703004B15FE /* Audio.swift */,
+				5E6FC1FF1FA4627C004B15FE /* music.mp3 */,
 				5E6FC1CA1FA445B3004B15FE /* AppDelegate.swift */,
 				5E6FC1CC1FA445B3004B15FE /* ViewController.swift */,
 				5E6FC1CE1FA445B3004B15FE /* Main.storyboard */,
@@ -235,8 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6FC2001FA4627C004B15FE /* music.mp3 in Resources */,
 				5E6FC1D81FA445B3004B15FE /* LaunchScreen.storyboard in Resources */,
 				5E6FC1D51FA445B3004B15FE /* Assets.xcassets in Resources */,
+				5E5F4C251FA71A1A00058B9B /* music2.mp3 in Resources */,
 				5E6FC1D01FA445B3004B15FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6FC2021FA46703004B15FE /* Audio.swift in Sources */,
 				5E6FC1D31FA445B3004B15FE /* pro2_ble_audio_effects.xcdatamodeld in Sources */,
 				5E6FC1CD1FA445B3004B15FE /* ViewController.swift in Sources */,
 				5E6FC1CB1FA445B3004B15FE /* AppDelegate.swift in Sources */,

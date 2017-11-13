@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "188a0008bc79d239f3719593cd807a19"
+build_time: [1510572910, 62908000]
+inputs:
+  "/Users/fuji1153/Desktop/ios application/pro2_ble_audio_effects/pro2_ble_audio_effectsTests/pro2_ble_audio_effectsTests.swift": [1509166644, 0]

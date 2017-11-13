@@ -18,7 +18,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		+U3YseLNyGIPczwMEShYIX5K4Dk=
+		i/yLOAL3GDS9tuQGZKkrJTUNNrg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,48 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		vu/dSVA+rhihSH9/uULq+P75/+I=
+		aEZ7JmT/Dlp5rZKgph8RYphBAkY=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<data>
+		eBqvw3mGAo8lUK/VAKBz5cT5fDM=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<data>
+		HIOyeVk19kuHD4v1Hor+2f8KsEc=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<data>
+		IdBQoM/ph6Lhv1ljGJVXadMkKig=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<data>
+		F/WTBzQERlkT+IAOIce76FZXBoE=
+		</data>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<data>
+		peG4W37q3+HVuK14LCUMP1ZvrUc=
+		</data>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<data>
+		FVtDOCQLpthuhos9WIUW+MhOSpc=
+		</data>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		6NRVyluoAap5BweCh7f3iBrl6nI=
+		</data>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<data>
+		rbJ0BKk0RfRRqIJBU+Ftv9LfxF8=
 		</data>
 		<key>Frameworks/libswiftAVFoundation.dylib</key>
 		<data>
@@ -92,6 +133,10 @@
 		<data>
 		KuRS5fU5QXWg8Hwiq/504vVI/M0=
 		</data>
+		<key>Frameworks/libswiftXCTest.dylib</key>
+		<data>
+		LFy01zqqiWKuK5HUPXD8VcS+XuQ=
+		</data>
 		<key>Frameworks/libswiftos.dylib</key>
 		<data>
 		WIgZDhgpkq8q29jzCBmub1qWZ/E=
@@ -108,9 +153,93 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest.dSYM/Contents/Info.plist</key>
+		<data>
+		2AjRZz2bDOLJgVPGWvVY5xaoxRw=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest.dSYM/Contents/Resources/DWARF/pro2_ble_audio_effectsTests</key>
+		<data>
+		msmnX5t5eNYqaNebBq47b2Oxh5c=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCore.dylib</key>
+		<data>
+		9yOdIdmCq5ymTzegx7gQRqpR8ZE=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreAudio.dylib</key>
+		<data>
+		35TEobxjc+cWeChl9WABte8oeqs=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreFoundation.dylib</key>
+		<data>
+		iBI5/PMbUUyYh7ZJeDw/48YbXz8=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreGraphics.dylib</key>
+		<data>
+		Ie5xIRoklF4abcNEBw/enYBI8V4=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreImage.dylib</key>
+		<data>
+		aaWxuJ2iBqzA1IQ8zMLgIdmn3vg=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreMedia.dylib</key>
+		<data>
+		G70FwVkgCQw/TwnxY7sC0cneBhA=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftDarwin.dylib</key>
+		<data>
+		KCt2qwz7KgV36/0y2+UzdGvbIms=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftDispatch.dylib</key>
+		<data>
+		TnIsJ2Kjgl9How1VGyccky289pw=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftFoundation.dylib</key>
+		<data>
+		gKYOB7PstfjlY7mu00cCeJLSMok=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftMetal.dylib</key>
+		<data>
+		J1ZewqFqFV4SFhz+rp5eI8qqLyk=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftObjectiveC.dylib</key>
+		<data>
+		fdI589RpQ/UaYQOklfX9R61S8zA=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftQuartzCore.dylib</key>
+		<data>
+		yu49bAAdV3ZcFZZkt8Pbk3yR9nA=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftUIKit.dylib</key>
+		<data>
+		+16eQ9BQ2rHecxt49vFUWN/Mwys=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftXCTest.dylib</key>
+		<data>
+		q0Z3a9QI+UuXo+gvszQcrx49OvQ=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftos.dylib</key>
+		<data>
+		05IuyRlm2OTMQK9Vwi/ICOziVVk=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Info.plist</key>
+		<data>
+		Q+LVEWNhBBP+zuAOAgNiXX/ywkU=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		rKK8XSoxvrZOG5qMUblxL9tIzo4=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/libswiftRemoteMirror.dylib</key>
+		<data>
+		K2PY54BCIPj444NXL7MpOTLs5nI=
+		</data>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/pro2_ble_audio_effectsTests</key>
+		<data>
+		SOM/yo7fAYKrmp16ti38iP2C37o=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		pKa8cPGCBRS9TQ1Lia311fZan64=
+		kFJvu4uHIomyX3pc0R/aOZV+r4s=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -176,11 +305,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+U3YseLNyGIPczwMEShYIX5K4Dk=
+			i/yLOAL3GDS9tuQGZKkrJTUNNrg=
 			</data>
 			<key>hash2</key>
 			<data>
-			tfH4JnNlsxFUgtc1QsaHI+zxIzkRgO/NttJuMjtXB7M=
+			qLhTaZUGLz3uJ6c8FgU79zYmCEp6gGSKVQk1pml3yek=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -198,11 +327,112 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vu/dSVA+rhihSH9/uULq+P75/+I=
+			aEZ7JmT/Dlp5rZKgph8RYphBAkY=
 			</data>
 			<key>hash2</key>
 			<data>
-			R0z1I74u2rCCqVmbW5+xaksJYdlQe4AQu30kiMOOMm4=
+			9UEH2mMdDDrgA9WnJpgcF/4s+I9+kfk2s42Djx25E+I=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eBqvw3mGAo8lUK/VAKBz5cT5fDM=
+			</data>
+			<key>hash2</key>
+			<data>
+			ubV6zkedxh4HzpnlhTjQ9oJRoWwLj2+XdvY9EJVmKw8=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HIOyeVk19kuHD4v1Hor+2f8KsEc=
+			</data>
+			<key>hash2</key>
+			<data>
+			yWqkmTLN0aNC9Cm0pzUQMK2l9LPafrYhLF8tWu+KrYA=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IdBQoM/ph6Lhv1ljGJVXadMkKig=
+			</data>
+			<key>hash2</key>
+			<data>
+			r5fTbAG3YkKAvH/h4VoOlWkFVgmJrey3N2EMaY8adXU=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F/WTBzQERlkT+IAOIce76FZXBoE=
+			</data>
+			<key>hash2</key>
+			<data>
+			gLeE3okpWoxSnPR8jq35UG400eBYYXkE3tMV8ekY+U0=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			peG4W37q3+HVuK14LCUMP1ZvrUc=
+			</data>
+			<key>hash2</key>
+			<data>
+			e1IgLCVfyQZxP2Np/Z0fLH7Ud0hlIqpqoxZAH+G8sU4=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FVtDOCQLpthuhos9WIUW+MhOSpc=
+			</data>
+			<key>hash2</key>
+			<data>
+			kn5jh87Gk1sBH1PYfwHFGV2KImMC386/SfW+xiqhjyQ=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6NRVyluoAap5BweCh7f3iBrl6nI=
+			</data>
+			<key>hash2</key>
+			<data>
+			0at5L3IOWyrVWsfChuPsqS90KcJ56WKg8N3i6LN7HJ4=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rbJ0BKk0RfRRqIJBU+Ftv9LfxF8=
+			</data>
+			<key>hash2</key>
+			<data>
+			+gaxT4kz3w5wuas9N658UaNtQnQV51e0zoU8BN2TH6A=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftAVFoundation.dylib</key>
@@ -381,6 +611,17 @@
 			4P/h8UwqUX1Zq4jx7+PXmnufxgdvC8FxmM7atArakgM=
 			</data>
 		</dict>
+		<key>Frameworks/libswiftXCTest.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LFy01zqqiWKuK5HUPXD8VcS+XuQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ao7rf+4uzTuTYXLUvYrZ+INEIjSTAWd1cxRsv5Rny6c=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftos.dylib</key>
 		<dict>
 			<key>hash</key>
@@ -403,15 +644,246 @@
 			Sw5TtR8zXVRo0LMCa4Bx+myWXTa15LyUrmBx8QwZGJY=
 			</data>
 		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2AjRZz2bDOLJgVPGWvVY5xaoxRw=
+			</data>
+			<key>hash2</key>
+			<data>
+			NyOtUrmFF8S5T0ED4yl3JIr7tjirxyIVmhxhkMQCiRA=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest.dSYM/Contents/Resources/DWARF/pro2_ble_audio_effectsTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			msmnX5t5eNYqaNebBq47b2Oxh5c=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOLFG13JCqwBh35i9dfNv+ztWPXFzO8iqw5Hsq8knOo=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCore.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9yOdIdmCq5ymTzegx7gQRqpR8ZE=
+			</data>
+			<key>hash2</key>
+			<data>
+			FcxTDCFFyjisVleb9V9SsvVL+hJpQtF2n7NtNT2BrLg=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreAudio.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			35TEobxjc+cWeChl9WABte8oeqs=
+			</data>
+			<key>hash2</key>
+			<data>
+			ARefdc1vdrGC2UKdMEqOGEgwoBccaQMtawQLsLNOIVg=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iBI5/PMbUUyYh7ZJeDw/48YbXz8=
+			</data>
+			<key>hash2</key>
+			<data>
+			0kjg7CJl1B8ItdBnjIyFTJ6xtRPNb3JwT+SN7K9oxuM=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreGraphics.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ie5xIRoklF4abcNEBw/enYBI8V4=
+			</data>
+			<key>hash2</key>
+			<data>
+			duR6jXounsKP4r0hk3QI6wfxGitVLX/+9kAUxEB54gU=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreImage.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aaWxuJ2iBqzA1IQ8zMLgIdmn3vg=
+			</data>
+			<key>hash2</key>
+			<data>
+			JBqICVNaAkwMEWrpJ4NbIek/rz3aumO0dKlBGsNffn8=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftCoreMedia.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G70FwVkgCQw/TwnxY7sC0cneBhA=
+			</data>
+			<key>hash2</key>
+			<data>
+			GEfAvLnlfa3VnUJ5X9Af0q75AIy3pnqndZato9eXm+k=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftDarwin.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KCt2qwz7KgV36/0y2+UzdGvbIms=
+			</data>
+			<key>hash2</key>
+			<data>
+			+7DxT8CUwKXVfhFmKYkpWkNq6Zapaz9iN69z2dqZLxM=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftDispatch.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TnIsJ2Kjgl9How1VGyccky289pw=
+			</data>
+			<key>hash2</key>
+			<data>
+			VBLwgGWxdxERFR9TgM9EoVurxfjMSbRp/wbOuTOD6mg=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gKYOB7PstfjlY7mu00cCeJLSMok=
+			</data>
+			<key>hash2</key>
+			<data>
+			TOZLL5MW/8YO5JheOES6nnha4D1o9wHlog0yZf3QMqc=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftMetal.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J1ZewqFqFV4SFhz+rp5eI8qqLyk=
+			</data>
+			<key>hash2</key>
+			<data>
+			pNlG5dtyHSBzIyQgwEMzVAGIPc9cVkwlcxFdtYtjn7Y=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftObjectiveC.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fdI589RpQ/UaYQOklfX9R61S8zA=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z4/9bVyc2I3VFULYiDORN+qqvN5Medu6+FKtqHb2Xmw=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftQuartzCore.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yu49bAAdV3ZcFZZkt8Pbk3yR9nA=
+			</data>
+			<key>hash2</key>
+			<data>
+			9ccKgvE6R3Y1ATuZ3lSYKHiFz+LOpgTfy5qckw4V630=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftUIKit.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+16eQ9BQ2rHecxt49vFUWN/Mwys=
+			</data>
+			<key>hash2</key>
+			<data>
+			6OYFfcPPXs3i1tpLEhDyET+dmkNCValgT+A5xTV/riI=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftXCTest.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q0Z3a9QI+UuXo+gvszQcrx49OvQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			y4NvDfkj9K8nojOiQgAvNqzvh+bFGT6Ra05VeQYjsw4=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Frameworks/libswiftos.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			05IuyRlm2OTMQK9Vwi/ICOziVVk=
+			</data>
+			<key>hash2</key>
+			<data>
+			471cnR6RqzrsQlEQElT98/NVF9XuUTSmwXrZVbrrpZc=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q+LVEWNhBBP+zuAOAgNiXX/ywkU=
+			</data>
+			<key>hash2</key>
+			<data>
+			3F7ctwCoIMgeODlJ0QLrYdASDQTKVdOLVdKlFWujKJ0=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rKK8XSoxvrZOG5qMUblxL9tIzo4=
+			</data>
+			<key>hash2</key>
+			<data>
+			3r5+jGwrxGT85oKujPvIf8xa2xVYOd1lScr3Q3+4ojI=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/libswiftRemoteMirror.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K2PY54BCIPj444NXL7MpOTLs5nI=
+			</data>
+			<key>hash2</key>
+			<data>
+			N1G9xYNCvhbQ666wDAtLVM/vIuhG9auGIjTvLKUMgMg=
+			</data>
+		</dict>
+		<key>PlugIns/pro2_ble_audio_effectsTests.xctest/pro2_ble_audio_effectsTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SOM/yo7fAYKrmp16ti38iP2C37o=
+			</data>
+			<key>hash2</key>
+			<data>
+			ElhTaxm99eozYbabH4dy2WPI01qne6uG4u6LvQbrxpY=
+			</data>
+		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pKa8cPGCBRS9TQ1Lia311fZan64=
+			kFJvu4uHIomyX3pc0R/aOZV+r4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			qk7EiIct8sWVZ6FERo+kaUvTwO/fG5Bl6RDcKXJ6vEA=
+			z+D2wlbCM37fY6B/glA6Lxehu+QsrFbIUnBJp2pYbNk=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

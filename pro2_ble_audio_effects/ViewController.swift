@@ -105,6 +105,12 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
                 true,
                 for: characteristic)
         }
+        for characteristic in characteristics where characteristic.uuid.isEqual(CBUUID(string: "00002A6A-0000-1000-8000-00805F9B34FB")) {
+            // 更新通知受け取りを開始する
+            peripheral.setNotifyValue(
+                true,
+                for: characteristic)
+        }
     }
     // Notify開始／停止時に呼ばれる  P.231 4-6 notify
     func peripheral(_ peripheral: CBPeripheral,
@@ -117,7 +123,7 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
             print("Notify状態更新成功！characteristic UUID:\(characteristic.uuid), isNotifying: \(characteristic.isNotifying)")
         }
         
-        ////スキャン開始
+//        ////スキャン開始
         isScanning = true
         centralManager.scanForPeripherals(withServices: nil, options: nil)
     }
@@ -146,8 +152,16 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
 //        }
         
         ///////オーディオ操作
-        if(str == "02" && String(describing: characteristic.uuid) == "00002A6F-0000-1000-8000-00805F9B34FB"){
-            audio.musicChanged()
+        if(str == "00" && String(describing: characteristic.uuid) == "00002A6F-0000-1000-8000-00805F9B34FB"){
+            if (!isplay){
+                audio.buttonPlayPressed(isPlay: false)
+                isplay = true
+            } else {
+                audio.buttonPlayPressed(isPlay: true)
+                isplay = false
+            }
+        }else if(str == "01" && String(describing: characteristic.uuid) == "00002A6F-0000-1000-8000-00805F9B34FB"){
+            audio.musicChanged(isPlay: isplay)
         }
         //////ディレイ
         if( String(describing: characteristic.uuid) == "00002A6E-0000-1000-8000-00805F9B34FB"){
@@ -159,6 +173,17 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
             sdrWetDryMix.value = Float(hex)
             audio.sliderWetDryMix(value: Float(hex))
         }
+        /////リバーブ
+        if( String(describing: characteristic.uuid) == "00002A6A-0000-1000-8000-00805F9B34FB"){
+            ////１６進数ー＞１０進数
+            var hex:UInt32 = 0x0
+            let scanner:Scanner = Scanner(string: str)
+            scanner.scanHexInt32(&hex)
+            print(hex)
+            sdrReverb.value = Float(hex)
+            audio.sliderReverbChanged(value: Float(hex))
+        }
+        
     }
     
     @IBOutlet weak var UUID: UILabel!
@@ -206,7 +231,7 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
         }
     }
     @IBAction func btnchange(sender: UIButton) {
-        audio.musicChanged()
+        audio.musicChanged(isPlay: isplay)
         
     }
     

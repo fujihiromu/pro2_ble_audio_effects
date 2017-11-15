@@ -38,6 +38,11 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
         eq02.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
         eq03.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
         eq04.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
+        sdrReverb.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
+        sdrPitch.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
+        sdrSpeed.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
+        sdrWetDryMix.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
+        
         // セントラルマネージャ初期化
         self.centralManager = CBCentralManager(delegate: self, queue: nil)
     }
@@ -192,7 +197,7 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber)
     {
         let messID = peripheral.name
-        UUID.text = messID
+//        UUID.text = messID
         self.peripheral = peripheral
         let str = peripheral.name
         print("peripheral: \(peripheral)")
@@ -208,14 +213,14 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
             }
         }
     }
-    @IBAction func scanBtnTapp(sender: UIButton) {
-        if !isScanning {
+ 
+    @IBAction func scanBtnTapp(sender: UISwitch) {
+        if !sender.isOn{
             isScanning = true
             centralManager.scanForPeripherals(withServices: nil, options: nil)
-            sender.setTitle("STOP SCAN", for: .normal)
+           
         } else {
             centralManager.stopScan()
-            sender.setTitle("START SCAN", for: .normal)
             isScanning = false
         }
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E3EFCD01FB9CB6600843ADB /* backgrounds.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E3EFCCF1FB9CB6500843ADB /* backgrounds.png */; };
+		5E3EFCD21FB9D02F00843ADB /* sakanaction.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5E3EFCD11FB9D02F00843ADB /* sakanaction.jpeg */; };
 		5E5F4C251FA71A1A00058B9B /* music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F4C241FA71A1A00058B9B /* music2.mp3 */; };
 		5E6FC1CB1FA445B3004B15FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FC1CA1FA445B3004B15FE /* AppDelegate.swift */; };
 		5E6FC1CD1FA445B3004B15FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FC1CC1FA445B3004B15FE /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E3EFCCF1FB9CB6500843ADB /* backgrounds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgrounds.png; sourceTree = "<group>"; };
+		5E3EFCD11FB9D02F00843ADB /* sakanaction.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sakanaction.jpeg; sourceTree = "<group>"; };
 		5E5F4C241FA71A1A00058B9B /* music2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music2.mp3; sourceTree = "<group>"; };
 		5E6FC1C71FA445B3004B15FE /* pro2_ble_audio_effects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pro2_ble_audio_effects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6FC1CA1FA445B3004B15FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		5E6FC1C91FA445B3004B15FE /* pro2_ble_audio_effects */ = {
 			isa = PBXGroup;
 			children = (
+				5E3EFCD11FB9D02F00843ADB /* sakanaction.jpeg */,
+				5E3EFCCF1FB9CB6500843ADB /* backgrounds.png */,
 				5E5F4C241FA71A1A00058B9B /* music2.mp3 */,
 				5E6FC2011FA46703004B15FE /* Audio.swift */,
 				5E6FC1FF1FA4627C004B15FE /* music.mp3 */,
@@ -244,7 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3EFCD21FB9D02F00843ADB /* sakanaction.jpeg in Resources */,
 				5E6FC2001FA4627C004B15FE /* music.mp3 in Resources */,
+				5E3EFCD01FB9CB6600843ADB /* backgrounds.png in Resources */,
 				5E6FC1D81FA445B3004B15FE /* LaunchScreen.storyboard in Resources */,
 				5E6FC1D51FA445B3004B15FE /* Assets.xcassets in Resources */,
 				5E5F4C251FA71A1A00058B9B /* music2.mp3 in Resources */,

@@ -41,10 +41,10 @@ open class Audio: NSObject {
         
         // DelayNodeの生成
         audioDelay = AVAudioUnitDelay()
-        audioDelay.delayTime = 1
-        audioDelay.feedback = 50
-        audioDelay.lowPassCutoff = 15000
-        audioDelay.wetDryMix = 100
+        audioDelay.delayTime = 0.5
+        audioDelay.feedback = 70
+        audioDelay.lowPassCutoff = 18000
+        audioDelay.wetDryMix = 10
         
         // TimePitchの生成
         audioSpeed = AVAudioUnitTimePitch()

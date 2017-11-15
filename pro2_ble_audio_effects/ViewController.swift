@@ -3,14 +3,22 @@ import CoreBluetooth
 
 class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDelegate {
     
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var musicName: UILabel!
+    @IBOutlet weak var artist: UILabel!
+    @IBOutlet weak var album: UILabel!
+    @IBOutlet weak var BLE_Switch: UISwitch!
+    
     @IBOutlet weak var btnPlay: UIButton!
     @IBOutlet weak var sdrReverb: UISlider!
-    @IBOutlet weak var sdrDelayTime: UISlider!
-    @IBOutlet weak var sdrFeedback: UISlider!
-    @IBOutlet weak var sdrLowPassCutOff: UISlider!
+    
+//    @IBOutlet weak var sdrDelayTime: UISlider!
+//    @IBOutlet weak var sdrFeedback: UISlider!
+//    @IBOutlet weak var sdrLowPassCutOff: UISlider!
     @IBOutlet weak var sdrWetDryMix: UISlider!
     @IBOutlet weak var sdrSpeed: UISlider!
     @IBOutlet weak var sdrPitch: UISlider!
+    @IBOutlet weak var sdrVolume: UISlider!
     
     @IBOutlet weak var eq00: UISlider!
     @IBOutlet weak var eq01: UISlider!
@@ -22,17 +30,22 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
     
     private var isScanning = false
     private var centralManager: CBCentralManager!
+    var image1: UIImage!
+    var image2: UIImage!
+    var musicNum = true
     private var peripheral: CBPeripheral!
     private var audio = Audio()
     var isplay = false
     
-    @IBOutlet weak var bypassBtn: UISwitch!
-    @IBAction func bypassSet(_ sender: Any) {
-//        self.audioUnitEQ.bypass = !self.audioUnitEQ.bypass
-    }
+//    @IBOutlet weak var bypassBtn: UISwitch!
+//    @IBAction func bypassSet(_ sender: Any) {
+////        self.audioUnitEQ.bypass = !self.audioUnitEQ.bypass
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        image1 = UIImage(named:"sakanaction.jpeg")
+        image2 = UIImage(named:"alexandoros.jpg")
         eq00.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
         eq01.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
         eq02.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
@@ -42,6 +55,7 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
         sdrPitch.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
         sdrSpeed.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
         sdrWetDryMix.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
+        sdrVolume.transform = CGAffineTransform(rotationAngle: CGFloat((-90.0 * M_PI) / 180.0))
         
         // セントラルマネージャ初期化
         self.centralManager = CBCentralManager(delegate: self, queue: nil)
@@ -137,61 +151,76 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
                     didUpdateValueFor characteristic: CBCharacteristic,
                     error: Error?)
     {
+    
         if let error = error {
             print("データ更新通知エラー: \(error)")
             return
-        }
-        print("データ更新！ characteristic UUID: \(characteristic.uuid), value: \(characteristic.value!), value: \(characteristic.description)")
-        var data = NSData(data: characteristic.value!)
-        print(data)
-        var str : String = String(describing: data)
-        if let range = str.range(of: "<"){
-            str.removeSubrange(range)
-        }
-        if let range = str.range(of: ">"){
-            str.removeSubrange(range )
-        }
-        print(str)
-//        if(str == "01"){
-//            audio.musicChanged()
-//        }
-        
-        ///////オーディオ操作
-        if(str == "00" && String(describing: characteristic.uuid) == "00002A6F-0000-1000-8000-00805F9B34FB"){
-            if (!isplay){
-                audio.buttonPlayPressed(isPlay: false)
-                isplay = true
-            } else {
-                audio.buttonPlayPressed(isPlay: true)
-                isplay = false
+        }else if(BLE_Switch.isOn){
+            print("データ更新！ characteristic UUID: \(characteristic.uuid), value: \(characteristic.value!), value: \(characteristic.description)")
+            var data = NSData(data: characteristic.value!)
+            print(data)
+            var str : String = String(describing: data)
+            if let range = str.range(of: "<"){
+                str.removeSubrange(range)
             }
-        }else if(str == "01" && String(describing: characteristic.uuid) == "00002A6F-0000-1000-8000-00805F9B34FB"){
-            audio.musicChanged(isPlay: isplay)
+            if let range = str.range(of: ">"){
+                str.removeSubrange(range )
+            }
+            print(str)
+    //        if(str == "01"){
+    //            audio.musicChanged()
+    //        }
+            
+            ///////オーディオ操作
+            if(str == "00" && String(describing: characteristic.uuid) == "00002A6F-0000-1000-8000-00805F9B34FB"){
+                if (!isplay){
+                    audio.buttonPlayPressed(isPlay: false)
+                    btnPlay.setTitle("PAUSE", for: .normal)
+                    isplay = true
+                } else {
+                    audio.buttonPlayPressed(isPlay: true)
+                    btnPlay.setTitle("PLAY", for: .normal)
+                    isplay = false
+                }
+            }else if(str == "01" && String(describing: characteristic.uuid) == "00002A6F-0000-1000-8000-00805F9B34FB"){
+                audio.musicChanged(isPlay: isplay,Num: musicNum)
+                if(musicNum){
+                    image.image = image2
+                    musicName.text = "ムーンソング"
+                    artist.text = "[Alexandros]"
+                    album.text = "- EXIST! -"
+                    musicNum = !musicNum
+                }else{
+                   image.image = image1
+                    musicName.text = "ミュージック"
+                    artist.text = "サカナクション"
+                    album.text = "- sakanaction -"
+                    musicNum = !musicNum
+                }
+            }
+            //////ディレイ
+            if( String(describing: characteristic.uuid) == "00002A6E-0000-1000-8000-00805F9B34FB"){
+                ////１６進数ー＞１０進数
+                var hex:UInt32 = 0x0
+                let scanner:Scanner = Scanner(string: str)
+                scanner.scanHexInt32(&hex)
+                print(hex)
+                sdrWetDryMix.value = Float(hex)
+                audio.sliderWetDryMix(value: Float(hex))
+            }
+            /////リバーブ
+            if( String(describing: characteristic.uuid) == "00002A6A-0000-1000-8000-00805F9B34FB"){
+                ////１６進数ー＞１０進数
+                var hex:UInt32 = 0x0
+                let scanner:Scanner = Scanner(string: str)
+                scanner.scanHexInt32(&hex)
+                print(hex)
+                sdrReverb.value = Float(hex)
+                audio.sliderReverbChanged(value: Float(hex))
+            }
         }
-        //////ディレイ
-        if( String(describing: characteristic.uuid) == "00002A6E-0000-1000-8000-00805F9B34FB"){
-            ////１６進数ー＞１０進数
-            var hex:UInt32 = 0x0
-            let scanner:Scanner = Scanner(string: str)
-            scanner.scanHexInt32(&hex)
-            print(hex)
-            sdrWetDryMix.value = Float(hex)
-            audio.sliderWetDryMix(value: Float(hex))
-        }
-        /////リバーブ
-        if( String(describing: characteristic.uuid) == "00002A6A-0000-1000-8000-00805F9B34FB"){
-            ////１６進数ー＞１０進数
-            var hex:UInt32 = 0x0
-            let scanner:Scanner = Scanner(string: str)
-            scanner.scanHexInt32(&hex)
-            print(hex)
-            sdrReverb.value = Float(hex)
-            audio.sliderReverbChanged(value: Float(hex))
-        }
-        
     }
     
-    @IBOutlet weak var UUID: UILabel!
     
     ////    // 周辺にあるデバイスを発見すると呼ばれる
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber)
@@ -215,28 +244,49 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
     }
  
     @IBAction func scanBtnTapp(sender: UISwitch) {
-        if !sender.isOn{
+        if sender.isOn{
             isScanning = true
             centralManager.scanForPeripherals(withServices: nil, options: nil)
            
         } else {
-            centralManager.stopScan()
+            
             isScanning = false
+            if let peripheral = peripheral {
+                centralManager.cancelPeripheralConnection(peripheral)
+            }
+            if centralManager.isScanning {
+                centralManager.stopScan()
+            }
         }
     }
     @IBAction func btnPlayPressed(sender: UIButton) {
+      
         if (!isplay){
             audio.buttonPlayPressed(isPlay: false)
-            btnPlay.setTitle("PLAY", for: .normal)
+            btnPlay.setTitle("PAUSE", for: .normal)
             isplay = true
         } else {
             audio.buttonPlayPressed(isPlay: true)
-            btnPlay.setTitle("PAUSE", for: .normal)
+            btnPlay.setTitle("PLAY", for: .normal)
             isplay = false
         }
     }
     @IBAction func btnchange(sender: UIButton) {
-        audio.musicChanged(isPlay: isplay)
+        audio.musicChanged(isPlay: isplay,Num: musicNum)
+        
+        if(musicNum){
+            image.image = image2
+            musicName.text = "ムーンソング"
+            artist.text = "[Alexandros]"
+            album.text = "- EXIST! -"
+            musicNum = !musicNum
+        }else{
+            image.image = image1
+            musicName.text = "ミュージック"
+            artist.text = "サカナクション"
+            album.text = "- sakanaction -"
+            musicNum = !musicNum
+        }
         
     }
     
@@ -244,17 +294,17 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
         audio.sliderReverbChanged(value: sdrReverb.value)
     }
     
-    @IBAction func sdrDelayTimeChanged(sender: UISlider) {
-        audio.sliderDelayTimeChanged(value: sdrDelayTime.value)
-    }
-    
-    @IBAction func sdrFeedbackChanged(sender: UISlider) {
-        audio.sliderFeedbackChanged(value: sdrFeedback.value)
-    }
-    
-    @IBAction func sdrLowPassCutOff(sender: UISlider) {
-        audio.sliderLowPassCutOff(value: sdrLowPassCutOff.value)
-    }
+//    @IBAction func sdrDelayTimeChanged(sender: UISlider) {
+//        audio.sliderDelayTimeChanged(value: sdrDelayTime.value)
+//    }
+//
+//    @IBAction func sdrFeedbackChanged(sender: UISlider) {
+//        audio.sliderFeedbackChanged(value: sdrFeedback.value)
+//    }
+//
+//    @IBAction func sdrLowPassCutOff(sender: UISlider) {
+//        audio.sliderLowPassCutOff(value: sdrLowPassCutOff.value)
+//    }
     
     @IBAction func sdrWetDryMix(sender: UISlider) {
         audio.sliderWetDryMix(value: sdrWetDryMix.value)
@@ -280,6 +330,9 @@ class ViewController: UIViewController,CBCentralManagerDelegate,CBPeripheralDele
     }
     @IBAction func sdrGain_04(sender: UISlider) {
         audio.sliderGain(value: sender.value, num: 4)
+    }
+    @IBAction func sdrVolumeChange(_ sender: Any) {
+        audio.sliderVolumeChange(value : sdrVolume.value)
     }
 }
 

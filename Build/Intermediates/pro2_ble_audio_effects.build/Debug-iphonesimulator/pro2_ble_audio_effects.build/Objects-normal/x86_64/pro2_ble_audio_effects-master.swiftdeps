@@ -1,7 +1,7 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "7e98755bb68c68555ff8ebec4e4996ed"
-build_time: [1510573231, 54855000]
+build_time: [1510724178, 281094000]
 inputs:
-  "/Users/fuji1153/Desktop/ios application/pro2_ble_audio_effects/pro2_ble_audio_effects/Audio.swift": [1510567436, 0]
-  "/Users/fuji1153/Desktop/ios application/pro2_ble_audio_effects/pro2_ble_audio_effects/ViewController.swift": [1510573007, 0]
+  "/Users/fuji1153/Desktop/ios application/pro2_ble_audio_effects/pro2_ble_audio_effects/Audio.swift": [1510652441, 0]
+  "/Users/fuji1153/Desktop/ios application/pro2_ble_audio_effects/pro2_ble_audio_effects/ViewController.swift": !dirty [1510724177, 0]
   "/Users/fuji1153/Desktop/ios application/pro2_ble_audio_effects/pro2_ble_audio_effects/AppDelegate.swift": [1509166643, 0]

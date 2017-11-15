@@ -10,14 +10,13 @@ provides-dynamic-lookup:
 - "centralManager"
 - "centralManagerDidUpdateState"
 - "peripheral"
-- "scanBtnTapped"
 depends-top-level:
-- !private "!"
 - !private "!="
 - !private "=="
 - !private ">"
 - "AssignmentPrecedence"
 - "BLE"
+- "Bool"
 - "BooleanLiteralType"
 - "CBCentralManager"
 - "CBCentralManagerDelegate"
@@ -34,13 +33,12 @@ depends-top-level:
 - !private "NSString"
 - "String"
 - !private "StringLiteralType"
-- "UIButton"
 - "UILabel"
 - !private "UnicodeScalarType"
 - !private "print"
 depends-member:
 - !private ["Sa", "count"]
-- ["22pro2_ble_audio_effects3BLEC", "BLEstart"]
+- ["22pro2_ble_audio_effects3BLEC", "Bool"]
 - ["22pro2_ble_audio_effects3BLEC", "CBCentralManager"]
 - ["22pro2_ble_audio_effects3BLEC", "CBCharacteristic"]
 - ["22pro2_ble_audio_effects3BLEC", "CBPeripheral"]
@@ -52,7 +50,6 @@ depends-member:
 - ["22pro2_ble_audio_effects3BLEC", "NSNumber"]
 - !private ["22pro2_ble_audio_effects3BLEC", "NSString"]
 - ["22pro2_ble_audio_effects3BLEC", "String"]
-- ["22pro2_ble_audio_effects3BLEC", "UIButton"]
 - ["22pro2_ble_audio_effects3BLEC", "UILabel"]
 - ["22pro2_ble_audio_effects3BLEC", "centralManager"]
 - ["22pro2_ble_audio_effects3BLEC", "centralManagerDidUpdateState"]
@@ -65,13 +62,12 @@ depends-member:
 - ["22pro2_ble_audio_effects3BLEC", "peripheralIsReady"]
 - ["22pro2_ble_audio_effects3BLEC", "peripheralIsReadyToSendWriteWithoutResponse"]
 - !private ["22pro2_ble_audio_effects3BLEC", "print"]
-- ["22pro2_ble_audio_effects3BLEC", "scanBtnTapped"]
+- ["22pro2_ble_audio_effects3BLEC", "scan"]
 - !private ["s23BidirectionalCollectionP", "count"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "range"]
 - !private ["s23BidirectionalCollectionP", "removeSubrange"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["So15CALayerDelegateP", "setTitle"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So11CBAttributeC", "characteristics"]
 - !private ["So11CBAttributeC", "description"]
@@ -167,7 +163,6 @@ depends-member:
 - !private ["s7CVarArgP", "scanForPeripherals"]
 - !private ["s7CVarArgP", "services"]
 - !private ["s7CVarArgP", "setNotifyValue"]
-- !private ["s7CVarArgP", "setTitle"]
 - !private ["s7CVarArgP", "state"]
 - !private ["s7CVarArgP", "stopScan"]
 - !private ["s7CVarArgP", "substring"]
@@ -212,7 +207,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "scanForPeripherals"]
 - !private ["s28CustomDebugStringConvertibleP", "services"]
 - !private ["s28CustomDebugStringConvertibleP", "setNotifyValue"]
-- !private ["s28CustomDebugStringConvertibleP", "setTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "state"]
 - !private ["s28CustomDebugStringConvertibleP", "stopScan"]
 - !private ["s28CustomDebugStringConvertibleP", "substring"]
@@ -261,7 +255,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "scanForPeripherals"]
 - !private ["s23CustomStringConvertibleP", "services"]
 - !private ["s23CustomStringConvertibleP", "setNotifyValue"]
-- !private ["s23CustomStringConvertibleP", "setTitle"]
 - !private ["s23CustomStringConvertibleP", "state"]
 - !private ["s23CustomStringConvertibleP", "stopScan"]
 - !private ["s23CustomStringConvertibleP", "substring"]
@@ -298,7 +291,6 @@ depends-member:
 - !private ["s9EquatableP", "isNotifying"]
 - !private ["s9EquatableP", "isScanning"]
 - !private ["s9EquatableP", "name"]
-- !private ["s9EquatableP", "normal"]
 - ["s9EquatableP", "peripheral"]
 - ["s9EquatableP", "peripheralDidUpdateName"]
 - ["s9EquatableP", "peripheralDidUpdateRSSI"]
@@ -310,7 +302,6 @@ depends-member:
 - !private ["s9EquatableP", "scanForPeripherals"]
 - !private ["s9EquatableP", "services"]
 - !private ["s9EquatableP", "setNotifyValue"]
-- !private ["s9EquatableP", "setTitle"]
 - !private ["s9EquatableP", "state"]
 - !private ["s9EquatableP", "stopScan"]
 - !private ["s9EquatableP", "substring"]
@@ -319,7 +310,6 @@ depends-member:
 - !private ["s9EquatableP", "value"]
 - ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
-- !private ["s25ExpressibleByArrayLiteralP", "normal"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "range"]
@@ -363,7 +353,6 @@ depends-member:
 - !private ["s8HashableP", "scanForPeripherals"]
 - !private ["s8HashableP", "services"]
 - !private ["s8HashableP", "setNotifyValue"]
-- !private ["s8HashableP", "setTitle"]
 - !private ["s8HashableP", "state"]
 - !private ["s8HashableP", "stopScan"]
 - !private ["s8HashableP", "substring"]
@@ -382,7 +371,6 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "range"]
 - !private ["So8NSCodingP", "removeSubrange"]
-- !private ["So8NSCodingP", "setTitle"]
 - !private ["So8NSCodingP", "substring"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So9NSCopyingP", "delegate"]
@@ -409,7 +397,7 @@ depends-member:
 - !private ["So16NSMutableCopyingP", "range"]
 - !private ["So16NSMutableCopyingP", "removeSubrange"]
 - !private ["So16NSMutableCopyingP", "substring"]
-- ["So8NSObjectC", "BLEstart"]
+- ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CBCentralManager"]
 - ["So8NSObjectC", "CBCharacteristic"]
 - ["So8NSObjectC", "CBPeripheral"]
@@ -421,7 +409,6 @@ depends-member:
 - ["So8NSObjectC", "NSNumber"]
 - !private ["So8NSObjectC", "NSString"]
 - ["So8NSObjectC", "String"]
-- ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "centralManager"]
 - ["So8NSObjectC", "centralManagerDidUpdateState"]
@@ -444,11 +431,10 @@ depends-member:
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "range"]
 - !private ["So8NSObjectC", "removeSubrange"]
-- ["So8NSObjectC", "scanBtnTapped"]
+- ["So8NSObjectC", "scan"]
 - !private ["So8NSObjectC", "scanForPeripherals"]
 - !private ["So8NSObjectC", "services"]
 - !private ["So8NSObjectC", "setNotifyValue"]
-- !private ["So8NSObjectC", "setTitle"]
 - !private ["So8NSObjectC", "state"]
 - !private ["So8NSObjectC", "stopScan"]
 - !private ["So8NSObjectC", "substring"]
@@ -485,7 +471,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "scanForPeripherals"]
 - !private ["So16NSObjectProtocolP", "services"]
 - !private ["So16NSObjectProtocolP", "setNotifyValue"]
-- !private ["So16NSObjectProtocolP", "setTitle"]
 - !private ["So16NSObjectProtocolP", "state"]
 - !private ["So16NSObjectProtocolP", "stopScan"]
 - !private ["So16NSObjectProtocolP", "substring"]
@@ -501,18 +486,15 @@ depends-member:
 - !private ["So8NSStringC", "range"]
 - !private ["So8NSStringC", "removeSubrange"]
 - !private ["So8NSStringC", "substring"]
-- !private ["s9OptionSetP", "normal"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - !private ["s26RangeReplaceableCollectionP", "count"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "range"]
 - !private ["s26RangeReplaceableCollectionP", "removeSubrange"]
-- !private ["s16RawRepresentableP", "normal"]
 - !private ["s8SequenceP", "count"]
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "range"]
 - !private ["s8SequenceP", "removeSubrange"]
-- !private ["s10SetAlgebraP", "normal"]
 - !private ["SS", "init"]
 - !private ["SS", "range"]
 - !private ["SS", "removeSubrange"]
@@ -525,43 +507,25 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "range"]
 - !private ["s20TextOutputStreamableP", "removeSubrange"]
-- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setTitle"]
-- !private ["So29UIAccessibilityIdentificationP", "setTitle"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
-- !private ["So12UIAppearanceP", "setTitle"]
 - !private ["So12UIAppearanceP", "text"]
-- !private ["So21UIAppearanceContainerP", "setTitle"]
 - !private ["So21UIAppearanceContainerP", "text"]
-- !private ["So8UIButtonC", "setTitle"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
-- !private ["So9UIControlC", "setTitle"]
-- !private ["SC14UIControlStateV", "normal"]
-- !private ["So17UICoordinateSpaceP", "setTitle"]
 - !private ["So17UICoordinateSpaceP", "text"]
-- !private ["So13UIDynamicItemP", "setTitle"]
 - !private ["So13UIDynamicItemP", "text"]
-- !private ["So18UIFocusEnvironmentP", "setTitle"]
 - !private ["So18UIFocusEnvironmentP", "text"]
-- !private ["So11UIFocusItemP", "setTitle"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So7UILabelC", "text"]
-- !private ["So30UIPasteConfigurationSupportingP", "setTitle"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
-- !private ["So11UIResponderC", "setTitle"]
 - !private ["So11UIResponderC", "text"]
-- !private ["So30UIResponderStandardEditActionsP", "setTitle"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
-- !private ["So35UISpringLoadedInteractionSupportingP", "setTitle"]
-- !private ["So18UITraitEnvironmentP", "setTitle"]
 - !private ["So18UITraitEnvironmentP", "text"]
-- !private ["So6UIViewC", "setTitle"]
 - !private ["So6UIViewC", "text"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s23_BidirectionalIndexableP", "count"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "range"]
 - !private ["s23_BidirectionalIndexableP", "removeSubrange"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setTitle"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -621,7 +585,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scanForPeripherals"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "services"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setNotifyValue"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "setTitle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "state"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stopScan"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "substring"]
@@ -688,24 +651,17 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
-- !private "s9OptionSetP"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
 - !private "s8SequenceP"
-- !private "s10SetAlgebraP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
-- !private "So8UIButtonC"
 - !private "So30UIContentSizeCategoryAdjustingP"
-- !private "So9UIControlC"
-- !private "SC14UIControlStateV"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
@@ -714,7 +670,6 @@ depends-nominal:
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
-- !private "So35UISpringLoadedInteractionSupportingP"
 - !private "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - !private "s14_ArrayProtocolP"
@@ -740,27 +695,20 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "38b26bcdf0ad15470d059242cef34fc8"
+interface-hash: "e03224678d26dbfd33e582b21a059394"

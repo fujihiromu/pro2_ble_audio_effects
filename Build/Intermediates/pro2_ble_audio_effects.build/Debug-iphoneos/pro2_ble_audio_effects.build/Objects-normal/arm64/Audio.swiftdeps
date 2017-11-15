@@ -7,10 +7,7 @@ provides-member:
 - ["22pro2_ble_audio_effects5AudioC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "%"
-- !private "+="
 - !private "..."
-- !private "=="
 - "AVAudioEngine"
 - "AVAudioFile"
 - "AVAudioPlayerNode"
@@ -35,6 +32,7 @@ depends-member:
 - !private ["So15AVAudio3DMixingP", "play"]
 - !private ["So15AVAudio3DMixingP", "scheduleFile"]
 - !private ["So15AVAudio3DMixingP", "stop"]
+- !private ["So15AVAudio3DMixingP", "volume"]
 - !private ["So13AVAudioEngineC", "attach"]
 - !private ["So13AVAudioEngineC", "connect"]
 - !private ["So13AVAudioEngineC", "init"]
@@ -48,6 +46,7 @@ depends-member:
 - !private ["So13AVAudioMixingP", "play"]
 - !private ["So13AVAudioMixingP", "scheduleFile"]
 - !private ["So13AVAudioMixingP", "stop"]
+- !private ["So13AVAudioMixingP", "volume"]
 - !private ["So11AVAudioNodeC", "bands"]
 - !private ["So11AVAudioNodeC", "bypass"]
 - !private ["So11AVAudioNodeC", "delayTime"]
@@ -61,17 +60,20 @@ depends-member:
 - !private ["So11AVAudioNodeC", "rate"]
 - !private ["So11AVAudioNodeC", "scheduleFile"]
 - !private ["So11AVAudioNodeC", "stop"]
+- !private ["So11AVAudioNodeC", "volume"]
 - !private ["So11AVAudioNodeC", "wetDryMix"]
 - !private ["So17AVAudioPlayerNodeC", "init"]
 - !private ["So17AVAudioPlayerNodeC", "pause"]
 - !private ["So17AVAudioPlayerNodeC", "play"]
 - !private ["So17AVAudioPlayerNodeC", "scheduleFile"]
 - !private ["So17AVAudioPlayerNodeC", "stop"]
+- !private ["So17AVAudioPlayerNodeC", "volume"]
 - !private ["So19AVAudioStereoMixingP", "init"]
 - !private ["So19AVAudioStereoMixingP", "pause"]
 - !private ["So19AVAudioStereoMixingP", "play"]
 - !private ["So19AVAudioStereoMixingP", "scheduleFile"]
 - !private ["So19AVAudioStereoMixingP", "stop"]
+- !private ["So19AVAudioStereoMixingP", "volume"]
 - !private ["So11AVAudioUnitC", "bands"]
 - !private ["So11AVAudioUnitC", "bypass"]
 - !private ["So11AVAudioUnitC", "delayTime"]
@@ -154,6 +156,7 @@ depends-member:
 - ["22pro2_ble_audio_effects5AudioC", "sliderPitch"]
 - ["22pro2_ble_audio_effects5AudioC", "sliderReverbChanged"]
 - ["22pro2_ble_audio_effects5AudioC", "sliderSpeed"]
+- ["22pro2_ble_audio_effects5AudioC", "sliderVolumeChange"]
 - ["22pro2_ble_audio_effects5AudioC", "sliderWetDryMix"]
 - !private ["s23BidirectionalCollectionP", "bandwidth"]
 - !private ["s23BidirectionalCollectionP", "bypass"]
@@ -198,7 +201,6 @@ depends-member:
 - !private ["s7CVarArgP", "lowPassCutoff"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "mainMixerNode"]
-- !private ["s7CVarArgP", "musicCount"]
 - !private ["s7CVarArgP", "pause"]
 - !private ["s7CVarArgP", "pitch"]
 - !private ["s7CVarArgP", "play"]
@@ -210,6 +212,7 @@ depends-member:
 - !private ["s7CVarArgP", "stop"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "url"]
+- !private ["s7CVarArgP", "volume"]
 - !private ["s7CVarArgP", "wetDryMix"]
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "bandwidth"]
@@ -252,7 +255,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "lowPassCutoff"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "mainMixerNode"]
-- !private ["s28CustomDebugStringConvertibleP", "musicCount"]
 - !private ["s28CustomDebugStringConvertibleP", "pause"]
 - !private ["s28CustomDebugStringConvertibleP", "pitch"]
 - !private ["s28CustomDebugStringConvertibleP", "play"]
@@ -264,6 +266,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "stop"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s28CustomDebugStringConvertibleP", "volume"]
 - !private ["s28CustomDebugStringConvertibleP", "wetDryMix"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -309,7 +312,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "lowPassCutoff"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "mainMixerNode"]
-- !private ["s23CustomStringConvertibleP", "musicCount"]
 - !private ["s23CustomStringConvertibleP", "pause"]
 - !private ["s23CustomStringConvertibleP", "pitch"]
 - !private ["s23CustomStringConvertibleP", "play"]
@@ -321,6 +323,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "stop"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "url"]
+- !private ["s23CustomStringConvertibleP", "volume"]
 - !private ["s23CustomStringConvertibleP", "wetDryMix"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
@@ -364,7 +367,6 @@ depends-member:
 - !private ["s9EquatableP", "lowPassCutoff"]
 - !private ["s9EquatableP", "main"]
 - !private ["s9EquatableP", "mainMixerNode"]
-- !private ["s9EquatableP", "musicCount"]
 - !private ["s9EquatableP", "parametric"]
 - !private ["s9EquatableP", "pause"]
 - !private ["s9EquatableP", "pitch"]
@@ -376,6 +378,7 @@ depends-member:
 - !private ["s9EquatableP", "start"]
 - !private ["s9EquatableP", "stop"]
 - !private ["s9EquatableP", "url"]
+- !private ["s9EquatableP", "volume"]
 - !private ["s9EquatableP", "wetDryMix"]
 - ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "bandwidth"]
@@ -425,7 +428,6 @@ depends-member:
 - !private ["s8HashableP", "lowPassCutoff"]
 - !private ["s8HashableP", "main"]
 - !private ["s8HashableP", "mainMixerNode"]
-- !private ["s8HashableP", "musicCount"]
 - !private ["s8HashableP", "parametric"]
 - !private ["s8HashableP", "pause"]
 - !private ["s8HashableP", "pitch"]
@@ -437,6 +439,7 @@ depends-member:
 - !private ["s8HashableP", "start"]
 - !private ["s8HashableP", "stop"]
 - !private ["s8HashableP", "url"]
+- !private ["s8HashableP", "volume"]
 - !private ["s8HashableP", "wetDryMix"]
 - ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -507,10 +510,12 @@ depends-member:
 - ["So8NSObjectC", "sliderPitch"]
 - ["So8NSObjectC", "sliderReverbChanged"]
 - ["So8NSObjectC", "sliderSpeed"]
+- ["So8NSObjectC", "sliderVolumeChange"]
 - ["So8NSObjectC", "sliderWetDryMix"]
 - !private ["So8NSObjectC", "start"]
 - !private ["So8NSObjectC", "stop"]
 - !private ["So8NSObjectC", "url"]
+- !private ["So8NSObjectC", "volume"]
 - !private ["So8NSObjectC", "wetDryMix"]
 - ["So8NSObjectC", ""]
 - !private ["So16NSObjectProtocolP", "AVAudioEngine"]
@@ -545,7 +550,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "lowPassCutoff"]
 - !private ["So16NSObjectProtocolP", "main"]
 - !private ["So16NSObjectProtocolP", "mainMixerNode"]
-- !private ["So16NSObjectProtocolP", "musicCount"]
 - !private ["So16NSObjectProtocolP", "pause"]
 - !private ["So16NSObjectProtocolP", "pitch"]
 - !private ["So16NSObjectProtocolP", "play"]
@@ -556,6 +560,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "start"]
 - !private ["So16NSObjectProtocolP", "stop"]
 - !private ["So16NSObjectProtocolP", "url"]
+- !private ["So16NSObjectProtocolP", "volume"]
 - !private ["So16NSObjectProtocolP", "wetDryMix"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
@@ -665,7 +670,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lowPassCutoff"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mainMixerNode"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "musicCount"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pause"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pitch"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "play"]
@@ -676,6 +680,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stop"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "volume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "wetDryMix"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s17_MutableIndexableP", "bandwidth"]
@@ -813,16 +818,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "5cc66d931a27830bf29f2d0d80808355"
+interface-hash: "d67432a3372a0197cc1fd7a0dd67a994"

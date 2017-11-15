@@ -119,9 +119,9 @@ open class Audio: NSObject {
         audioSpeed.rate = value
     }
     
-    public func musicChanged(isPlay : Bool){
-        musicCount += 1
-        if(musicCount % 2 == 0){
+    public func musicChanged(isPlay : Bool,Num : Bool){
+      
+        if(Num){
             audioFilePlayer.stop()
             // AVAudioFileの生成
             audioFile = try! AVAudioFile(forReading: Bundle.main.url(forResource: "music2", withExtension: "mp3")!)
@@ -130,7 +130,7 @@ open class Audio: NSObject {
                 audioFilePlayer.play()
             }
             
-        }else if(musicCount % 2 == 1){
+        }else{
             audioFilePlayer.stop()
             // AVAudioFileの生成
             audioFile = try! AVAudioFile(forReading: Bundle.main.url(forResource: "music", withExtension: "mp3")!)
@@ -149,6 +149,10 @@ open class Audio: NSObject {
     public func sliderGain(value : Float,num : Int){
         let band = self.audioUnitEQ.bands[num]
         band.gain = value
+    }
+    
+    public func sliderVolumeChange(value : Float){
+         audioFilePlayer.volume = value
     }
     
 }

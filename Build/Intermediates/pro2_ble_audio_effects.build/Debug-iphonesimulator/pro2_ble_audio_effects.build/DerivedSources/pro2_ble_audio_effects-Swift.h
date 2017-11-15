@@ -248,7 +248,7 @@ SWIFT_CLASS("_TtC22pro2_ble_audio_effects14ViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified UUID;
 /// /    // 周辺にあるデバイスを発見すると呼ばれる
 - (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)RSSI;
-- (IBAction)scanBtnTappWithSender:(UIButton * _Nonnull)sender;
+- (IBAction)scanBtnTappWithSender:(UISwitch * _Nonnull)sender;
 - (IBAction)btnPlayPressedWithSender:(UIButton * _Nonnull)sender;
 - (IBAction)btnchangeWithSender:(UIButton * _Nonnull)sender;
 - (IBAction)sdrReverbChangedWithSender:(UISlider * _Nonnull)sender;

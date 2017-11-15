@@ -207,35 +207,37 @@ SWIFT_CLASS("_TtC22pro2_ble_audio_effects5Audio")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UILabel;
+@class UISwitch;
 @class UIButton;
 @class UISlider;
-@class UISwitch;
 @class CBCentralManager;
 @class CBPeripheral;
 @class CBService;
 @class CBCharacteristic;
-@class UILabel;
 @class NSNumber;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC22pro2_ble_audio_effects14ViewController")
 @interface ViewController : UIViewController <CBCentralManagerDelegate, CBPeripheralDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified musicName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified artist;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified album;
+@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified BLE_Switch;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnPlay;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sdrReverb;
-@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sdrDelayTime;
-@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sdrFeedback;
-@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sdrLowPassCutOff;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sdrWetDryMix;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sdrSpeed;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sdrPitch;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sdrVolume;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified eq00;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified eq01;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified eq02;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified eq03;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified eq04;
-@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified bypassBtn;
-- (IBAction)bypassSet:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
@@ -245,16 +247,12 @@ SWIFT_CLASS("_TtC22pro2_ble_audio_effects14ViewController")
 - (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverCharacteristicsForService:(CBService * _Nonnull)service error:(NSError * _Nullable)error;
 - (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
 - (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified UUID;
 /// /    // 周辺にあるデバイスを発見すると呼ばれる
 - (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)RSSI;
 - (IBAction)scanBtnTappWithSender:(UISwitch * _Nonnull)sender;
 - (IBAction)btnPlayPressedWithSender:(UIButton * _Nonnull)sender;
 - (IBAction)btnchangeWithSender:(UIButton * _Nonnull)sender;
 - (IBAction)sdrReverbChangedWithSender:(UISlider * _Nonnull)sender;
-- (IBAction)sdrDelayTimeChangedWithSender:(UISlider * _Nonnull)sender;
-- (IBAction)sdrFeedbackChangedWithSender:(UISlider * _Nonnull)sender;
-- (IBAction)sdrLowPassCutOffWithSender:(UISlider * _Nonnull)sender;
 - (IBAction)sdrWetDryMixWithSender:(UISlider * _Nonnull)sender;
 - (IBAction)sdrSpeedWithSender:(UISlider * _Nonnull)sender;
 - (IBAction)sdrPitchWithSender:(UISlider * _Nonnull)sender;
@@ -263,6 +261,7 @@ SWIFT_CLASS("_TtC22pro2_ble_audio_effects14ViewController")
 - (IBAction)sdrGain_02WithSender:(UISlider * _Nonnull)sender;
 - (IBAction)sdrGain_03WithSender:(UISlider * _Nonnull)sender;
 - (IBAction)sdrGain_04WithSender:(UISlider * _Nonnull)sender;
+- (IBAction)sdrVolumeChange:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
